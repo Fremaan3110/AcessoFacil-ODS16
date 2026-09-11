@@ -49,3 +49,19 @@ Abaixo está o modelo de domínio da aplicação, demonstrando as entidades em J
 * **ServicoPublico:** Mapeia o serviço municipal (ex: Iluminação Pública, Tapa-Buracos) (`*` para `1` OrgaoPublico e `1` para `0..*` Documento).
 * **OrgaoPublico:** Entidade responsável pelo atendimento (ex: Secretaria de Obras, Prefeitura Bairro).
 * **Documento:** Relação de documentos/comprovantes necessários para a solicitação.
+
+---
+
+## 🏗️ Arquitetura do Sistema (C4 Model)
+
+Para detalhar a arquitetura técnica e o fluxo de dados do **Acesso Fácil**, utilizamos a notação do **C4 Model**.
+
+### **Nível 1: Diagrama de Contexto**
+Apresenta a visão geral do sistema, o cidadão utilizando a aplicação e a integração com a API externa de inteligência artificial.
+
+![Diagrama de Contexto C4](documentos/c4-contexto.png)
+
+### **Nível 2: Diagrama de Contêineres**
+Detalha os limites da aplicação e os papéis das tecnologias da stack (**React Native**, **Spring Boot**, **PostgreSQL** e as APIs externas).
+
+![Diagrama de Contêineres C4](documentos/c4-conteiner.png)
