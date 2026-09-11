@@ -40,7 +40,7 @@ O **Acesso Fácil** elimina a necessidade de o cidadão conhecer a estrutura gov
 
 Abaixo está o modelo de domínio da aplicação, demonstrando as entidades em Java e seus relacionamentos:
 
-![Diagrama de Classes](documentos/diagrama-de-classes.png)
+![Diagrama de Classes](docs/diagrama-de-classes.png)
 
 ### Explicação das Entidades (POO):
 * **Usuario:** Cidadão que utiliza o aplicativo para relatar problemas (`1` para `0..*` Solicitacao).
