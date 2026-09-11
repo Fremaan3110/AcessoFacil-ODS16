@@ -64,4 +64,4 @@ Apresenta a visão geral do sistema, o cidadão utilizando a aplicação e a int
 ### **Nível 2: Diagrama de Contêineres**
 Detalha os limites da aplicação e os papéis das tecnologias da stack (**React Native**, **Spring Boot**, **PostgreSQL** e as APIs externas).
 
-[docs/c4-nivel2-conteineres.png]
+![Diagrama de Contêineres C4](docs/c4-nivel2-conteineres.png)
