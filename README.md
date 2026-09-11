@@ -59,7 +59,7 @@ Para detalhar a arquitetura técnica e o fluxo de dados do **Acesso Fácil**, ut
 ### **Nível 1: Diagrama de Contexto**
 Apresenta a visão geral do sistema, o cidadão utilizando a aplicação e a integração com a API externa de inteligência artificial.
 
-![Diagrama de Contexto C4](docs/c4-contexto.png)
+![Diagrama de Contexto C4](docs/c4-contexto.png.png)
 
 ### **Nível 2: Diagrama de Contêineres**
 Detalha os limites da aplicação e os papéis das tecnologias da stack (**React Native**, **Spring Boot**, **PostgreSQL** e as APIs externas).
