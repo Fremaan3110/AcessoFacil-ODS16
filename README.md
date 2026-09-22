@@ -30,7 +30,7 @@ O **Acesso Fácil** elimina a necessidade de o cidadão conhecer a estrutura gov
 
 ---
 
-## 👥 Público-Alvo 
+## 👥 Público Alvo 
 * **Cidadãos em geral:** Pessoas de todas as idades que necessitam de atendimento público municipal mas encontram dificuldades com termos técnicos ou burocracia.
 * **Comunidades e Líderes Comunitários:** Moradores que mapeiam demandas de bairros e buscam encaminhá-las para os órgãos competentes.
 
