@@ -65,3 +65,12 @@ Apresenta a visão geral do sistema, o cidadão utilizando a aplicação e a int
 Detalha os limites da aplicação e os papéis das tecnologias da stack (**React Native**, **Spring Boot**, **PostgreSQL** e as APIs externas).
 
 ![Diagrama de Contêineres C4](docs/c4-nivel2-conteineres.png)
+
+
+---
+
+## 📅 Gestão do Projeto
+
+O acompanhamento das tarefas, a distribuição entre os integrantes e o fluxo de desenvolvimento são gerenciados publicamente através do nosso quadro Kanban:
+
+📌 **[Acesse o Quadro de Gestão do Projeto (GitHub Projects)](https://github.com/users/Fremaan3110/projects/1)**
