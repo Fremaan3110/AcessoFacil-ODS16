@@ -1,0 +1,687 @@
+
+/* =====================================
+   1. CORES E CONFIGURAÇÕES GERAIS
+===================================== */
+
+:root {
+    --fundo: #101118;
+    --fundo-card: #1b1e29;
+    --fundo-input: #252938;
+
+    --lilas: #c5b4e3;
+    --rosa: #f1c7c3;
+    --menta: #b8dcd1;
+    --creme: #f6f1eb;
+
+    --texto: #f5f5f7;
+    --texto-secundario: #b9bbc8;
+
+    --borda: #343849;
+
+    --gradiente: linear-gradient(
+        110deg,
+        #f1c7c3,
+        #c5b4e3,
+        #aabfff
+    );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =====================================
+   2. CABEÇALHO
+===================================== */
+
+.cabecalho {
+    width: 100%;
+    padding: 25px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--borda);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo i {
+    color: var(--lilas);
+    margin-right: 8px;
+}
+
+.logo span,
+.apresentacao h1 span {
+    background: var(--gradiente);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: var(--texto-secundario);
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--lilas);
+}
+
+/* =====================================
+   3. APRESENTAÇÃO INICIAL
+===================================== */
+
+.inicio {
+     width: 100%;
+    min-height: 600px;
+    padding: 90px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image:
+         linear-gradient(
+        to bottom,
+        transparent 65%,
+        #101118 100%
+    ),
+    linear-gradient(
+        90deg,
+        #101118 0%,
+        rgba(16, 17, 24, 0.95) 25%,
+        rgba(16, 17, 24, 0.2) 65%,
+        transparent 100%
+    ),
+        url("img/ilustra-inicio.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apresentacao {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    max-width: 550px;
+}
+
+.ods {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 25px;
+
+    border: 1px solid var(--borda);
+    border-radius: 30px;
+
+    background: var(--fundo-card);
+    color: var(--lilas);
+    font-size: 13px;
+}
+
+.apresentacao h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.apresentacao h2 {
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 400;
+    color: var(--texto-secundario);
+    margin-bottom: 20px;
+}
+
+.apresentacao p {
+    max-width: 520px;
+    color: var(--texto-secundario);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.botao-inicio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 14px 28px;
+    border-radius: 30px;
+
+    background: var(--gradiente);
+    color: #17171d;
+    font-weight: bold;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.botao-inicio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 180, 227, 0.25);
+}
+
+/* .ilustracao {
+    flex: 1;
+    max-width: 420px;
+    min-height: 300px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(197, 180, 227, 0.18),
+            transparent 65%
+        );
+
+    border-radius: 30px;
+} */
+
+/* =====================================
+   4. ÁREA DA SOLICITAÇÃO
+===================================== */
+
+.solicitacao {
+    padding: 30px 8% 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-formulario,
+.card-resultado {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 35px;
+
+    background: var(--fundo-card);
+    border: 1px solid var(--borda);
+    border-radius: 25px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo-card > i {
+    padding: 18px;
+    border-radius: 16px;
+    background: #554b70;
+    color: var(--creme);
+    font-size: 25px;
+}
+
+.titulo-card h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.titulo-card p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+/* =====================================
+   5. FORMULÁRIO
+===================================== */
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 20px;
+
+    background: var(--fundo-input);
+    color: var(--texto);
+
+    border: 1px solid #454a60;
+    border-radius: 15px;
+
+    resize: vertical;
+    outline: none;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea::placeholder {
+    color: #9699aa;
+}
+
+textarea:focus {
+    border-color: var(--lilas);
+    box-shadow: 0 0 0 3px rgba(197, 180, 227, 0.12);
+}
+
+.contador {
+    text-align: right;
+    font-size: 12px;
+    color: var(--texto-secundario);
+    margin-top: 5px;
+}
+
+/* =====================================
+   6. CARDS INFORMATIVOS
+===================================== */
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 18px 12px;
+
+    background: #252938;
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+}
+
+.info i {
+    font-size: 22px;
+    color: var(--menta);
+}
+
+.info:nth-child(2) i {
+    color: var(--rosa);
+}
+
+.info:nth-child(3) i {
+    color: var(--lilas);
+}
+
+.info p {
+    font-size: 12px;
+    color: var(--texto-secundario);
+}
+
+/* =====================================
+   7. BOTÃO DE ENVIAR
+===================================== */
+
+#botaoEnviar,
+#novaSolicitacao {
+    width: 100%;
+    padding: 18px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: var(--gradiente);
+    color: #17171d;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#botaoEnviar:hover,
+#novaSolicitacao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 180, 227, 0.25);
+}
+
+#botaoEnviar:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+#mensagemErro {
+    margin-top: 15px;
+    color: #ffb6b6;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* =====================================
+   8. TELA DE RESULTADO
+===================================== */
+
+.escondido {
+    display: none;
+}
+
+.resultado-titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.resultado-titulo > i {
+    font-size: 55px;
+    color: var(--menta);
+    margin-bottom: 15px;
+}
+
+.resultado-titulo h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.resultado-titulo p {
+    color: var(--texto-secundario);
+}
+
+.resultado-item {
+    padding: 22px;
+    margin-bottom: 18px;
+
+    border-radius: 15px;
+    border: 1px solid var(--borda);
+}
+
+.resultado-item h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.resultado-item h3 i {
+    margin-right: 10px;
+}
+
+.resultado-item p {
+    font-size: 17px;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+
+.categoria {
+    background: rgba(197, 180, 227, 0.09);
+    border-color: rgba(197, 180, 227, 0.25);
+}
+
+.categoria h3,
+.categoria p {
+    color: var(--lilas);
+}
+
+.urgencia {
+    background: rgba(241, 199, 195, 0.07);
+    border-color: rgba(241, 199, 195, 0.2);
+}
+
+.urgencia h3,
+.urgencia p {
+    color: var(--rosa);
+}
+
+.orientacao {
+    background: rgba(184, 220, 209, 0.07);
+    border-color: rgba(184, 220, 209, 0.25);
+}
+
+.orientacao h3 {
+    color: var(--menta);
+}
+
+.orientacao p {
+    color: var(--texto);
+    line-height: 1.8;
+}
+
+#novaSolicitacao {
+    margin-top: 15px;
+}
+
+/* =====================================
+   9. SOBRE O PROJETO
+===================================== */
+
+.sobre {
+    padding: 80px 8%;
+    text-align: center;
+
+    background: #171923;
+    border-top: 1px solid var(--borda);
+}
+
+.sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--lilas);
+}
+
+.sobre p {
+    max-width: 750px;
+    margin: auto;
+
+    color: var(--texto-secundario);
+    line-height: 1.9;
+}
+
+/* =====================================
+   10. RODAPÉ
+===================================== */
+
+footer {
+    padding: 30px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    border-top: 1px solid var(--borda);
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+/* =====================================
+   11. RESPONSIVIDADE
+===================================== */
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 20px 5%;
+    }
+
+    .inicio {
+        padding: 70px 5%;
+        gap: 25px;
+    }
+
+    .solicitacao {
+        padding: 30px 5% 80px;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        padding: 15px;
+    }
+
+    .ilustracao {
+        min-height: 220px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .inicio {
+        min-height: 550px;
+        padding: 65px 6%;
+
+        background-image:
+            linear-gradient(
+                rgba(16, 17, 24, 0.85),
+                rgba(16, 17, 24, 0.95)
+            ),
+            url("img/ilustra-inicio.png");
+
+        background-position: 65% center;
+    }
+
+    .apresentacao h1 {
+        max-width: 100%;
+    }
+
+    .apresentacao h2 {
+        font-size: 21px;
+    }
+
+    .apresentacao p {
+        font-size: 14px;
+    }
+
+    .ods {
+        font-size: 11px;
+    }
+
+    .ilustracao {
+        display: none;
+    }
+
+    .solicitacao {
+        padding: 25px 4% 70px;
+    }
+
+    .card-formulario,
+    .card-resultado {
+        padding: 22px 18px;
+        border-radius: 20px;
+    }
+
+    .titulo-card {
+        gap: 12px;
+    }
+
+    .titulo-card > i {
+        padding: 13px;
+        font-size: 20px;
+    }
+
+    .titulo-card h2 {
+        font-size: 20px;
+    }
+
+    .titulo-card p {
+        font-size: 12px;
+    }
+
+    textarea {
+        min-height: 160px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .informacoes {
+        gap: 10px;
+    }
+
+    .resultado-titulo h2 {
+        font-size: 23px;
+    }
+
+    .resultado-item {
+        padding: 18px;
+    }
+
+    .sobre {
+        padding: 60px 6%;
+    }
+
+    .sobre h2 {
+        font-size: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ACESSIBILIDADE */
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

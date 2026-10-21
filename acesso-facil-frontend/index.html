@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acesso Fácil | Seus direitos, mais perto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </link>
+
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-sparkles"></i>
+            Acesso <span>Fácil</span>
+        </a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#solicitacao">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- apresentação do site -->
+        <section class="inicio" id="inicio">
+
+            <div class="apresentacao">
+                <span class="ods">
+                    ODS 16 - Paz, Justiça e Instituições Eficazes
+                </span>
+
+                <h1>
+                    Acesso <span>Fácil</span>
+                </h1>
+
+                <h2>
+                    Conectando você aos seus direitos de forma simples e acessível.
+                </h2>
+
+                <p>
+                    Tem alguma dúvida sobre serviços públicos ou seus direitos?
+                    Descreeva a situação e receba uma orientação sobre por onde começar.
+                </p>
+
+                <a href="#solicitacao" class="botao-inicio">
+                    Fazer uma solicitação
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- <div class="ilustracao">
+                <img src="img/ilustra-inicio.png" alt="Ilustração de uma pessoa com balões">
+            </div> -->
+        </section>
+
+        <!-- Formulario de solicitação -->
+        <section class="solicitacao" id="solicitacao">
+
+            <div class="card-formulario" id="telaFormulario">
+
+                <div class="titulo-card">
+                    <i class="fa-regular fa-comment-dots"></i>
+
+                    <div>
+                        <h2>Faça sua solicitação</h2>
+
+                        <p>Conte o que está acontecendo. Quanto mais detalhes, melhor será a orientação.</p>
+                    </div>
+                </div>
+
+                <form id="formSolicitacao">
+
+                    <label for="relato">
+                        Sua duvida ou solicitação:
+                    </label>
+
+                    <textarea id="relato" name="relato"
+                        placeholder="Ex: Preciso de orientação para emitir segunda via do meu RG..." maxlength="1000"
+                        required></textarea>
+
+                    <div class="contador">
+                        <span id="contadorCaracteres">0</span>/1000
+                    </div>
+
+                    <div class="informacoes">
+                        <div class="info">
+                            <i class="fa-solid fa-lock"></i>
+                            <p>Envio direto para nossa API</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fa-solid fa-bolt"></i>
+                            <p>Análise automatizada</p>
+                        </div>
+
+                        <div class="info">
+                            <i class="fa-solid fa-heart"></i>
+                            <p>Mais acesso mais justiça</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="botaoEnviar">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Enviar solicitação
+                    </button>
+
+                    <p id="mensagemErro" role="alert"></p>
+                </form>
+            </div>
+
+            <!-- Resultado da API -->
+            <div class="card-resultado escondido" id="telaResultado">
+
+                <div class="resultado-titulo">
+
+                    <i class="fa-regular fa-circle-check"></i>
+
+                    <h2>Solicitação analisada</h2>
+
+                    <p>Confira abaixo a orientação para seu caso.</p>
+                </div>
+
+                <div class="resultado-item categoria">
+                    <h3>
+                        <i class="fa-solid fa-folder"></i>
+                        Categoria
+                    </h3>
+
+                    <p id="resultadoCategoria"></p>
+                </div>
+
+                <div class="resultado-item urgencia">
+                    <h3>
+                        <i class="fa-solid fa-clock"></i>
+                        Nível de urgência
+                    </h3>
+                    <p id="resultadoUrgencia"></p>
+                </div>
+
+                <div class="resultado-item orientacao">
+                    <h3>
+                        <i class="fa-solid fa-file-lines"></i>
+                        Orientação
+                    </h3>
+                    <p id="resultadoOrientacao"></p>
+                </div>
+
+                <button type="button" id="novaSolicitacao">
+                    Fazer nova solicitação
+                </button>
+            </div>
+        </section>
+
+        <!-- sobre o projeto -->
+        <section class="sobre" id="sobre">
+            <h2>Sobre o Acesso Fácil</h2>
+
+            <p>O Acesso Fácil é um projeto acadêmico desenvolvido com base na ODS 16 da ONU, que busca promover a paz, a justiça e instituições eeficazes.
+                Nosso objetivo é facilitar o acesso à informção sobre serviços públicos, oferecendo orientações iniciais de maneira simples e acessível.
+            </p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Acesso Fácil &copy; 2026</p>
+
+        <p>Projeto Acadêmico | ODS 16</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
