@@ -29,7 +29,7 @@ public class GroqAIService {
                 "Relato: " + relato;
 
         Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("model", "llama-3.3-70b-versatile");
+        requestBody.put("model", "openai/gpt-oss-120b");
         requestBody.put("messages", List.of(Map.of("role", "user", "content", prompt)));
 
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
@@ -43,6 +43,7 @@ public class GroqAIService {
 
             return parseRespostaIA(content);
         } catch (Exception e) {
+            System.err.println("ERRO AO CHAMAR A GROQ: " + e.getMessage());
             AnaliseIA erro = new AnaliseIA();
             erro.setCategoria("Geral");
             erro.setNivelUrgencia("Media");
