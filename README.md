@@ -5,18 +5,18 @@
 
 ---
 
-## 🎯 ODS Escolhida
+## ODS Escolhida
 Nosso projeto ataca a **ODS 16 — Paz, Justiça e Instituições Eficazes**.
 O objetivo é fortalecer a transparência e a eficácia das instituições, garantindo que qualquer cidadão consiga exercer seus direitos e acessar os serviços públicos municipais de forma rápida, simples e inclusiva.
 
 ---
 
-## 🛑 O Problema Real
+## O Problema Real
 A maioria dos cidadãos não sabe a qual órgão recorrer quando enfrenta um problema na cidade (ex: iluminação com defeito, descarte irregular de lixo, buracos em vias ou emissão de documentos). A informação existe, mas está pulverizada em diversos portais e escrita com termos burocráticos. Isso gera frustração, perda de tempo e sobrecarga nos canais de atendimento por chamados encaminhados para os setores errados.
 
 ---
 
-## ## 🤖 A Solução com Inteligência Artificial
+## A Solução com Inteligência Artificial
 
 O **Acesso Fácil** foi desenvolvido para ajudar cidadãos a entender melhor como lidar com problemas relacionados aos serviços públicos.
 
@@ -29,13 +29,13 @@ O projeto é um protótipo acadêmico e não realiza a abertura de solicitaçõe
 
 ---
 
-## 👥 Público Alvo 
+## Público Alvo 
 * **Cidadãos em geral:** Pessoas de todas as idades que necessitam de atendimento público municipal mas encontram dificuldades com termos técnicos ou burocracia.
 * **Comunidades e Líderes Comunitários:** Moradores que mapeiam demandas de bairros e buscam encaminhá-las para os órgãos competentes.
 
 ---
 
-## 📐 Modelagem Inicial (Diagrama de Classes POO)
+## Modelagem Inicial (Diagrama de Classes POO)
 
 Abaixo está o modelo de domínio da aplicação, demonstrando as entidades em Java e seus relacionamentos:
 
@@ -49,7 +49,7 @@ As entidades possuem um relacionamento de **um para um (1:1)**, pois cada solici
 
 ---
 
-## 🏗️ Arquitetura do Sistema (C4 Model)
+## Arquitetura do Sistema (C4 Model)
 
 Para detalhar a arquitetura técnica e o fluxo de dados do **Acesso Fácil**, utilizamos a notação do **C4 Model**.
 
