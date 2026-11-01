@@ -1,7 +1,7 @@
 # 🏛️ Acesso Fácil — Direcionamento Inteligente aos Serviços Públicos
 
 > **ODS 16:** Paz, Justiça e Instituições Eficazes  
-> **Tecnologias:** Java (Spring Boot) | React Native | PostgreSQL | API de Inteligência Artificial
+> **Tecnologias:** Java (Spring Boot) | HTML, CSS e JavaScript | PostgreSQL | Groq API
 
 ---
 
@@ -16,17 +16,16 @@ A maioria dos cidadãos não sabe a qual órgão recorrer quando enfrenta um pro
 
 ---
 
-## 🤖 A Solução com Inteligência Artificial
-O **Acesso Fácil** elimina a necessidade de o cidadão conhecer a estrutura governamental. 
-1. O usuário apenas digita seu problema em linguagem natural (ex: *"Tem um poste queimado na minha rua há três dias"*).
-2. A **IA de Classificação e Extração** analisa a mensagem, identifica a **categoria**, o **nível de urgência** e o **tipo de serviço**.
-3. O sistema retorna um **Plano de Ação** claro com:
-   * Órgão responsável correto.
-   * Passo a passo do que fazer.
-   * Lista de documentos necessários.
-   * Link ou canal oficial para abertura do protocolo.
+## ## 🤖 A Solução com Inteligência Artificial
 
-*(Escopo de validação do MVP: focado em Serviços Urbanos de uma Cidade Piloto).*
+O **Acesso Fácil** foi desenvolvido para ajudar cidadãos a entender melhor como lidar com problemas relacionados aos serviços públicos.
+
+1. O usuário descreve seu problema em um formulário, utilizando suas próprias palavras.
+2. O sistema envia o relato para uma API, que utiliza inteligência artificial para identificar a **categoria** e o **nível de urgência**.
+3. Após a análise, o usuário recebe uma **orientação** sobre a situação relatada.
+4. O relato e o resultado da análise são armazenados no banco de dados.
+
+O projeto é um protótipo acadêmico e não realiza a abertura de solicitações diretamente nos órgãos públicos.
 
 ---
 
@@ -43,12 +42,10 @@ Abaixo está o modelo de domínio da aplicação, demonstrando as entidades em J
 ![Diagrama de Classes](docs/diagrama-de-classes.png)
 
 ### Explicação das Entidades (POO):
-* **Usuario:** Cidadão que utiliza o aplicativo para relatar problemas (`1` para `0..*` Solicitacao).
-* **Solicitacao:** Registra o relato em linguagem natural feito pelo cidadão (`1` para `1` AnaliseIA).
-* **AnaliseIA:** Representa o processamento do modelo generativo, armazenando a categoria identificada, o grau de urgência e a recomendação técnica (`1` para `1` ServicoPublico).
-* **ServicoPublico:** Mapeia o serviço municipal (ex: Iluminação Pública, Tapa-Buracos) (`*` para `1` OrgaoPublico e `1` para `0..*` Documento).
-* **OrgaoPublico:** Entidade responsável pelo atendimento (ex: Secretaria de Obras, Prefeitura Bairro).
-* **Documento:** Relação de documentos/comprovantes necessários para a solicitação.
+* **Solicitacao:** Armazena o relato enviado pelo cidadão, a data de criação e o resultado da análise.
+* **AnaliseIA:** Armazena a categoria, o nível de urgência e a orientação gerada para o relato.
+
+As entidades possuem um relacionamento de **um para um (1:1)**, pois cada solicitação está associada a uma análise.
 
 ---
 
@@ -62,7 +59,7 @@ Apresenta a visão geral do sistema, o cidadão utilizando a aplicação e a int
 ![Diagrama de Contexto C4](docs/c4-contexto.png)
 
 ### **Nível 2: Diagrama de Contêineres**
-Detalha os limites da aplicação e os papéis das tecnologias da stack (**React Native**, **Spring Boot**, **PostgreSQL** e as APIs externas).
+Apresenta as principais partes do sistema e como elas se comunicam: o front-end desenvolvido em **HTML, CSS e JavaScript**, o back-end em **Java com Spring Boot**, o banco de dados **PostgreSQL** e a **Groq API**.
 
 ![Diagrama de Contêineres C4](docs/c4-nivel2-conteineres.png)
 
