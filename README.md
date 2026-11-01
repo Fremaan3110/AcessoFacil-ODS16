@@ -56,7 +56,7 @@ Para detalhar a arquitetura técnica e o fluxo de dados do **Acesso Fácil**, ut
 ### **Nível 1: Diagrama de Contexto**
 Apresenta a visão geral do sistema, o cidadão utilizando a aplicação e a integração com a API externa de inteligência artificial.
 
-![Diagrama de Contexto C4](c4-contexto(2).png)
+![Diagrama de Contexto C4](docs/c4-contexto-nv1.png)
 
 ### **Nível 2: Diagrama de Contêineres**
 Apresenta as principais partes do sistema e como elas se comunicam: o front-end desenvolvido em **HTML, CSS e JavaScript**, o back-end em **Java com Spring Boot**, o banco de dados **PostgreSQL** e a **Groq API**.
