@@ -34,9 +34,9 @@ formulario.addEventListener("submit", async (event) => {
 
     try {
         const resposta = await fetch(
-            "https://acessofacil-ods16.onrender.com",
-            {
-                method: "POST",
+    "https://acessofacil-ods16.onrender.com/api/solicitacoes",
+    {
+        method: "POST",
 
                 headers: {
                     "Content-Type": "application/json"
