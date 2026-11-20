@@ -71,3 +71,28 @@ Apresenta as principais partes do sistema e como elas se comunicam: o front-end 
 O acompanhamento das tarefas, a distribuição entre os integrantes e o fluxo de desenvolvimento são gerenciados publicamente através do nosso quadro Kanban:
 
 📌 **[Acesse o Quadro de Gestão do Projeto (GitHub Projects)](https://github.com/users/Fremaan3110/projects/1)**
+
+
+## ☁️ Sistema em Produção (Nuvem & SaaS)
+
+O back-end e o banco de dados do **Acesso Fácil (ODS 16)** estão hospedados na nuvem no modelo **Software como Serviço (SaaS)**, permitindo que qualquer cidadão utilize a plataforma de triagem jurídica inteligente sem precisar instalar servidores ou bancos de dados localmente.
+
+* **URL Pública da API (Render):** https://acessofacil-ods16.onrender.com
+* **Endpoint Principal (`POST`):** `https://acessofacil-ods16.onrender.com/api/solicitacoes`
+* **Banco de Dados em Nuvem:** PostgreSQL hospedado no **Supabase** (tabelas `tb_solicitacao` e `tb_analise_ia`)
+* **Motor de Inteligência Artificial:** Integração via API com a **Groq** para classificação de categoria, nível de urgência e orientação jurídica inicial.
+
+### 🎥 Vídeo de Demonstração do MVP (Entrega Final)
+* **Assista ao vídeo completo (API na nuvem, persistência no Supabase e conceito SaaS):** [Clique aqui para assistir](COLE_AQUI_O_LINK_DO_VIDEO)
+
+---
+
+### 🔌 Exemplo de Requisição para a API
+
+```json
+POST [https://acessofacil-ods16.onrender.com/api/solicitacoes](https://acessofacil-ods16.onrender.com/api/solicitacoes)
+Content-Type: application/json
+
+{
+  "descricao": "Preciso de orientação gratuita para solicitar pensão alimentícia na Defensoria Pública"
+}
