@@ -75,16 +75,15 @@ O acompanhamento das tarefas, a distribuição entre os integrantes e o fluxo de
 
 ## ☁️ Sistema em Produção (Nuvem & SaaS)
 
-O back-end e o banco de dados do **Acesso Fácil (ODS 16)** estão hospedados na nuvem no modelo **Software como Serviço (SaaS)**, permitindo que qualquer cidadão utilize a plataforma de triagem jurídica inteligente sem precisar instalar servidores ou bancos de dados localmente.
+O **Acesso Fácil (ODS 16)** está hospedado na nuvem no modelo **Software como Serviço (SaaS)**, permitindo que qualquer cidadão utilize a triagem inteligente diretamente pelo navegador sem instalar servidores ou bancos de dados localmente.
 
-* **URL Pública da API (Render):** https://acessofacil-ods16.onrender.com
+* **Site Público (Front-end no GitHub Pages):** https://fremaan3110.github.io/AcessoFacil-ODS16/acesso-facil-frontend/
+* **URL Pública da API (Back-end no Render):** https://acessofacil-ods16.onrender.com
 * **Endpoint Principal (`POST`):** `https://acessofacil-ods16.onrender.com/api/solicitacoes`
-* **Banco de Dados em Nuvem:** PostgreSQL hospedado no **Supabase** (tabelas `tb_solicitacao` e `tb_analise_ia`)
-* **Motor de Inteligência Artificial:** Integração via API com a **Groq** para classificação de categoria, nível de urgência e orientação jurídica inicial.
+* **Banco de Dados em Nuvem:** PostgreSQL hospedado no **Supabase** (`tb_solicitacao` e `tb_analise_ia`)
 
 ### 🎥 Vídeo de Demonstração do MVP (Entrega Final)
-* **Assista ao vídeo completo (API na nuvem, persistência no Supabase e conceito SaaS):** [Clique aqui para assistir](COLE_AQUI_O_LINK_DO_VIDEO)
-
+* **Assista à demonstração na nuvem e explicação SaaS:** [Clique aqui para assistir](COLE_AQUI_O_LINK_DO_VIDEO)
 ---
 
 ### 🔌 Exemplo de Requisição para a API
