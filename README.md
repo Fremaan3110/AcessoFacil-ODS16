@@ -82,10 +82,6 @@ O **Acesso Fácil (ODS 16)** está hospedado na nuvem no modelo **Software como 
 * **Endpoint Principal (`POST`):** `https://acessofacil-ods16.onrender.com/api/solicitacoes`
 * **Banco de Dados em Nuvem:** PostgreSQL hospedado no **Supabase** (`tb_solicitacao` e `tb_analise_ia`)
 
-### 🎥 Vídeo de Demonstração do MVP (Entrega Final)
-* **Assista à demonstração na nuvem e explicação SaaS:** [Clique aqui para assistir](COLE_AQUI_O_LINK_DO_VIDEO)
----
-
 ### 🔌 Exemplo de Requisição para a API
 
 ```json
@@ -95,3 +91,20 @@ Content-Type: application/json
 {
   "descricao": "Preciso de orientação gratuita para solicitar pensão alimentícia na Defensoria Pública"
 }
+
+
+# 🏛️ Acesso Fácil — Direcionamento Inteligente aos Serviços Públicos
+
+**ODS 16:** Paz, Justiça e Instituições Eficazes  
+**Arquitetura:** SaaS (Software como Serviço) | Java (Spring Boot) • HTML/CSS/JS • PostgreSQL (Supabase) • Groq IA
+
+---
+
+## 🔗 Links Rápidos das Entregas e Demonstrações (Atividades 5, 6 e Final)
+
+* 🌐 **Aplicação Web Online (Front-end — GitHub Pages):** https://fremaan3110.github.io/AcessoFacil-ODS16/acesso-facil-frontend/
+* ⚙️ **API em Produção (Back-end — Render):** https://acessofacil-ods16.onrender.com
+* 🎬 **Vídeo Final — Pitch Deck e Retrospectiva do Semestre:** [Assistir ao Pitch Final] https://youtu.be/8M4zeYEeD5A?si=p0XloH0a1zljY3X_
+* 📊 **Apresentação de Slides (Pitch Deck):** [Acessar Slides] https://canva.link/yw1o0o5d2vratg2
+* ☁️ **Vídeo Atividade 6 — Sistema na Nuvem e Conceito SaaS:** [Assistir à Demonstração na Nuvem] https://youtu.be/9wCVMUfNEO0?si=dH4yYPCQFRsQrCzk
+* 📱 **Vídeo Atividade 5 — Primeira Tela e Comunicação com a API:** [Assistir à Demonstração do Front-end] https://youtu.be/jauIbxA9qAM?si=phFF_jEZDcqXQO5A
