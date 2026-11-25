@@ -92,12 +92,6 @@ Content-Type: application/json
   "descricao": "Preciso de orientação gratuita para solicitar pensão alimentícia na Defensoria Pública"
 }
 
-
-# 🏛️ Acesso Fácil — Direcionamento Inteligente aos Serviços Públicos
-
-**ODS 16:** Paz, Justiça e Instituições Eficazes  
-**Arquitetura:** SaaS (Software como Serviço) | Java (Spring Boot) • HTML/CSS/JS • PostgreSQL (Supabase) • Groq IA
-
 ---
 
 ## 🔗 Links Rápidos das Entregas e Demonstrações (Atividades 5, 6 e Final)
