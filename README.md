@@ -78,8 +78,7 @@ O acompanhamento das tarefas, a distribuição entre os integrantes e o fluxo de
 O **Acesso Fácil (ODS 16)** está hospedado na nuvem no modelo **Software como Serviço (SaaS)**, permitindo que qualquer cidadão utilize a triagem inteligente diretamente pelo navegador sem instalar servidores ou bancos de dados localmente.
 
 * **Site Público (Front-end no GitHub Pages):** https://fremaan3110.github.io/AcessoFacil-ODS16/acesso-facil-frontend/
-* **URL Pública da API (Back-end no Render):** https://acessofacil-ods16.onrender.com
-* **Endpoint Principal (`POST`):** `https://acessofacil-ods16.onrender.com/api/solicitacoes`
+* **URL Pública da API (Back-end no Render):** [https://acessofacil-ods16.onrender.com](https://acessofacil-ods16.onrender.com *(Endpoint `POST /api/solicitacoes`)*)
 * **Banco de Dados em Nuvem:** PostgreSQL hospedado no **Supabase** (`tb_solicitacao` e `tb_analise_ia`)
 
 ---
