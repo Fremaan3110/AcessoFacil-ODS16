@@ -84,10 +84,8 @@ O **Acesso Fácil (ODS 16)** está hospedado na nuvem no modelo **Software como 
 
 ---
 
-## 🔗 Links Rápidos das Entregas e Demonstrações (Atividades 5, 6 e Final)
+## 🔗 Links Rápidos das Entregas (Atividades 5, 6, Final e Canva)
 
-* 🌐 **Aplicação Web Online (Front-end — GitHub Pages):** https://fremaan3110.github.io/AcessoFacil-ODS16/acesso-facil-frontend/
-* ⚙️ **API em Produção (Back-end — Render):** https://acessofacil-ods16.onrender.com
 * 🎬 **Vídeo Final — Pitch Deck e Retrospectiva do Semestre:** [Assistir ao Pitch Final] https://youtu.be/8M4zeYEeD5A?si=p0XloH0a1zljY3X_
 * 📊 **Apresentação de Slides (Pitch Deck):** [Acessar Slides] https://canva.link/yw1o0o5d2vratg2
 * ☁️ **Vídeo Atividade 6 — Sistema na Nuvem e Conceito SaaS:** [Assistir à Demonstração na Nuvem] https://youtu.be/9wCVMUfNEO0?si=dH4yYPCQFRsQrCzk
