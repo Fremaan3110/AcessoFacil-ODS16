@@ -82,16 +82,6 @@ O **Acesso Fácil (ODS 16)** está hospedado na nuvem no modelo **Software como 
 * **Endpoint Principal (`POST`):** `https://acessofacil-ods16.onrender.com/api/solicitacoes`
 * **Banco de Dados em Nuvem:** PostgreSQL hospedado no **Supabase** (`tb_solicitacao` e `tb_analise_ia`)
 
-### 🔌 Exemplo de Requisição para a API
-
-```json
-POST [https://acessofacil-ods16.onrender.com/api/solicitacoes](https://acessofacil-ods16.onrender.com/api/solicitacoes)
-Content-Type: application/json
-
-{
-  "descricao": "Preciso de orientação gratuita para solicitar pensão alimentícia na Defensoria Pública"
-}
-
 ---
 
 ## 🔗 Links Rápidos das Entregas e Demonstrações (Atividades 5, 6 e Final)
@@ -102,3 +92,15 @@ Content-Type: application/json
 * 📊 **Apresentação de Slides (Pitch Deck):** [Acessar Slides] https://canva.link/yw1o0o5d2vratg2
 * ☁️ **Vídeo Atividade 6 — Sistema na Nuvem e Conceito SaaS:** [Assistir à Demonstração na Nuvem] https://youtu.be/9wCVMUfNEO0?si=dH4yYPCQFRsQrCzk
 * 📱 **Vídeo Atividade 5 — Primeira Tela e Comunicação com a API:** [Assistir à Demonstração do Front-end] https://youtu.be/jauIbxA9qAM?si=phFF_jEZDcqXQO5A
+
+---
+
+### 🔌 Exemplo de Requisição para a API
+
+```json
+POST [https://acessofacil-ods16.onrender.com/api/solicitacoes](https://acessofacil-ods16.onrender.com/api/solicitacoes)
+Content-Type: application/json
+
+{
+  "descricao": "Preciso de orientação gratuita para solicitar pensão alimentícia na Defensoria Pública"
+}
